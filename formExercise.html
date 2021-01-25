@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <h1>Customer Experience Survey</h1>
+    <br>
+    <label for="storeNumber">Store Number</label>
+    <select id="storeNumber">
+        <option>3109</option>
+        <option>2421</option>
+        <option>5357</option>
+    </select>
+    <br>
+    <fieldset>
+        <legend>When you visited</legend>
+        <label for="date">Date Visited</label>
+        <input type="date" id="date" min="2021-01-01" max="2021-12-31">
+        <label for="time">Time:</label>
+        <input type="time" id="time">
+    </fieldset>
+    <br>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" placeholder="John">
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" placeholder="Doe">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="your email">
+    <br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="radioLink">
+    <label for="female">Female</label>
+    <input type="radio" name="radioLink" id="female" checked>
+    <label for="other">Other</label>
+    <input type="radio" name="radioLink" id="other">
+    <br>
+    <label for="tellUsAboutYourExperience">Tell us about your experience:</label>
+    <br>
+    <textarea id="tellUsAboutYourExperience" cols="20" rows="2"></textarea>
+    <br>
+    <label for="timesVisited">Times visited in the last month:</label>
+    <input type="number" id="timesVisited" min="1" max="30">
+    <br>
+    <label for="checkBox">Please check the box if you would be willing to be contacted about your experience</label>
+    <input type="checkbox" id="checkBox">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Password" minlength="5" maxlength="10">
+    <br>
+    <input type="reset">
+    <input type="submit">
+</body>
+
+</html>
